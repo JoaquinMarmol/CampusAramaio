@@ -1,0 +1,200 @@
+header{
+background-color: black;
+}
+
+.contenido {
+    background-color: rgb(14, 13, 13);
+}
+
+.logo {
+    width: 50%;
+}
+
+.subtitulo {
+    height: 100px;
+    background-color: #00FF13;
+    text-align: center;
+    font-size: 30px;
+}
+
+.palabrasdestacadas {
+    font-size: 30px;
+    text-align: justify;
+}
+
+.izquierda {
+    color: #00FF13;
+    font-size: 25px;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 50%;
+    border-color: #00FF13;
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 20px;
+}
+
+.evaluacionmultiplechoise {
+
+margin-top: -40px;
+
+
+}
+
+.derecha {
+    color: #00FF13;
+    width: 45%;
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 70px;
+    margin-left: 50px;
+    display: flex;
+    border-color: #00FF13;
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 20px;
+}
+
+.infoclases {
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: -100px;
+}
+
+.infoclases5 {
+    color: white;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.tituloclase5 {
+    color: #00FF13;
+}
+.subralladoclase5 {
+    text-decoration: underline;
+}
+
+.card {
+    display: flex;
+    --background: linear-gradient(to left, #2bf768 0%, #15ff00 100%);
+    width: 450px;
+    height: 600px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #00b818;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+   }
+   
+   .card::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    z-index: -1;
+    height: 105%;
+    width: 110%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #2bf72b;
+    background: var(--background);
+    transition: opacity .5s;
+   }
+   
+   .card-info {
+    --color: #181818;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+   
+   
+   .card .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+   }
+   
+   /*Hover*/
+   .card:hover::after {
+    overflow: visible;
+   }
+   
+   .card:hover .card-info {
+    color: #88fda1;
+    transition: color 1s;
+   }
+
+   .textodetarjeta {
+    color: white;
+    font-size: 20px;
+    }
+
+.fecha {
+    color: #88fda1;
+    font-size: 25px;
+}
+
+
+    button {
+        outline: none;
+        cursor: pointer;
+        border: none;
+        padding: 0.9rem 2rem;
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        position: relative;
+        display: inline-block;
+        letter-spacing: 0.05rem;
+        font-weight: 700;
+        font-size: 17px;
+        border-radius: 500px;
+        overflow: hidden;
+        background: #66ff66;
+        color: ghostwhite;
+       }
+       
+       button span {
+        position: relative;
+        z-index: 10;
+        transition: color 0.4s;
+       }
+       
+       button:hover span {
+        color: black;
+       }
+       
+       button::before,
+       button::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+       }
+       
+       button::before {
+        content: "";
+        background: #000;
+        width: 120%;
+        left: -10%;
+        transform: skew(30deg);
+        transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+       }
+       
+       button:hover::before {
+        transform: translate3d(100%, 0, 0);
+       }
+       
+   

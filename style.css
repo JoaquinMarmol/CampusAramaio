@@ -1,3 +1,4 @@
+
 html {
     height: 100%;
   }
@@ -513,60 +514,3 @@ html {
       }
     }
   }
-
-
-
-
-header{
-background-color: black;
-}
-
-.contenido {
-    background-color: black;
-}
-
-.logo {
-    width: 50%;
-}
-
-.subtitulo {
-    height: 100px;
-    background-color: #00FF13;
-    text-align: center;
-    font-size: 30px;
-}
-
-.palabrasdestacadas {
-    font-size: 70px;
-}
-
-.izquierda {
-    color: #00FF13;
-    font-size: 25px;
-    margin-top: 50px;
-    display: flex;
-    margin-left: 50%;
-}
-
-.evaluacionmultiplechoise {
-display: flex;
-margin-top: -40px;
-
-}
-
-.derecha {
-    color: #00FF13;
-    font-size: 25px;
-    text-align: justify;
-    margin-top: 70px;
-    margin-left: 50px;
-    display: flex;
-     
-}
-
-.infoclases {
-    color: white;
-    font-size: 25px;
-    margin-top: 50px;
-    margin-left: -100px;
-}
