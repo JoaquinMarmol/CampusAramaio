@@ -103,36 +103,18 @@ html {
     margin: 25px 30px;
   }
   
-  .profile-card header a:after {
-    position: absolute;
-    content: "";
-    bottom: -17px;
-    right: 45px;
-    width: 20px;
-    height: 20px;
-    border: 4px solid #FFFFFF;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    background: -webkit-linear-gradient(top, #21f51e 0%, #85ffc6 50%, #4c7cea 50%, #0c2683 100%);
-    background: linear-gradient(#aef6ff 0%, #bfeefd 50%, #078fff 50%, #076aff 100%);
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-    -webkit-animation: scaleIn 0.3s 3.5s ease forwards;
-    animation: scaleIn 0.3s 3.5s ease forwards;
-  }
+
   
-  .profile-card header a > img {
-    width: 120px;
+.profile-card header a > img {
+    width: 320px;
     max-width: 100%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+    -webkit-border-radius: 20%;
+    border-radius: 20%;
     -webkit-transition: -webkit-box-shadow 0.3s ease;
     transition: box-shadow 0.3s ease;
     -webkit-box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.06);
     box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.06);
-  }
+}
   
   .profile-card header a:hover > img {
     -webkit-box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
@@ -155,64 +137,7 @@ html {
     -webkit-animation: moveIn 1s 3.1s ease forwards;
     animation: moveIn 1s 3.1s ease forwards;
   }
-  .boton {
-    padding: 8px 5px 0px 5px;
-    display: block;
-    width: 130px;
-    height: 30px;
-    text-align: center;
-    background-color: #676767;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-}
-  .profile-social-links {
-    width: 218px;
-    display: inline-block;
-    float: right;
-    margin: 0px;
-    padding: 15px 20px;
-    background: #FFFFFF;
-    margin-top: 50px;
-    text-align: center;
-    opacity: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-animation: moveIn 1s 3.1s ease forwards;
-    animation: moveIn 1s 3.1s ease forwards;
-  }
-  
-  .profile-social-links li {
-    list-style: none;
-    margin: -5px 0px 0px 0px;
-    padding: 0px;
-    float: left;
-    width: 25%;
-    text-align: center;
-  }
-  
-  .profile-social-links li a {
-    display: inline-block;
-    color: red;
-    width: 24px;
-    height: 24px;
-    padding: 6px;
-    position: relative;
-    overflow: hidden!important;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-  }
-  
-  .profile-social-links li a i {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .profile-social-links li a img,
-  .profile-social-links li a svg {
-    width: 24px;
-  }
-  
+
   @-webkit-keyframes init {
     0% {
       width: 0px;
@@ -480,11 +405,7 @@ html {
       display: block;
       float: none;
     }
-    .profile-social-links {
-      width: 100%;
-      display: block;
-      float: none;
-    }
+
     @-webkit-keyframes materia {
       0% {
         background: #E0E0E0;
@@ -514,3 +435,73 @@ html {
       }
     }
   }
+  .boton {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    border-radius: 500px;
+    overflow: hidden;
+    background:#167118;
+    color: ghostwhite;
+   }
+   
+   .boton span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   
+   .boton:hover span {
+    color: black;
+   }
+   
+   .boton::before,
+   .boton::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   .boton::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   .boton:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+   .boton{
+    text-decoration: none;
+   }
+   @media (max-width:1000px) {
+    @keyframes materia {
+      0% {
+        background: #E0E0E0;
+      }
+      50% {
+        border-radius: 15px;
+      }
+      100% {
+        width: 100%;
+        height: 750px;
+        background: #FFFFFF;
+        border-radius: 15px;
+      }
+    }
+
+}
