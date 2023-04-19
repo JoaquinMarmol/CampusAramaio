@@ -491,6 +491,9 @@ html {
     text-decoration: none;
    }
    @media (max-width:1000px) {
+    body{
+      height: 1100px;
+    }
     @keyframes materia {
       0% {
         background: #E0E0E0;
@@ -500,7 +503,7 @@ html {
       }
       100% {
         width: 95%;
-        height: 85%;
+        height: 750px;
         background: #000000;
         border-radius: 15px;
     }

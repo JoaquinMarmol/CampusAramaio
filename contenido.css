@@ -140,12 +140,13 @@ button {
    }
    @media (max-width:1000px) {
     .card {
-        display: flex;
-        flex-direction: column;
         position: absolute;
-        width: 90%;
+        width: 85%;
         height: 615px;
-        left: 0px;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
         padding: 20px;
         margin-top: 150px;
         border-radius: 20px;
