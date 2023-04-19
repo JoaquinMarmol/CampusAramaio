@@ -18,7 +18,8 @@ img{
 .card{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: black;
+    color: white;
     position: absolute;
     width: 700px;
     height: 470px;
@@ -39,17 +40,19 @@ img{
     margin-top: 400px;
 }
 .izquierda{
+    color: white;
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: white;
+    background-color: black;
     width: 550px;
     border-radius: 20px;
     padding: 10px;
     border: 1px solid black;
 }
 .derecha{
-    background-color: white;
+    color: white;
+    background-color: black;
     width: 550px;
     border-radius: 20px;
     padding: 10px;
@@ -59,10 +62,10 @@ canvas{
     height: 3500px;
 }
 h1{
-    color: #167118; 
+    color: #0fe942; 
 }
 h3{
-    color: #167118;
+    color: #0fe942;
 }
 .clase5{
     display: flex;
@@ -82,8 +85,9 @@ button {
     font-size: 17px;
     border-radius: 500px;
     overflow: hidden;
-    background: #167118;
+    background: #0fe942;
     color: ghostwhite;
+    border: 1px solid white;
    }
    
    button span {
@@ -128,10 +132,9 @@ button {
     .card {
         display: flex;
         flex-direction: column;
-        background-color: white;
         position: absolute;
         width: 90%;
-        height: 570px;
+        height: 615px;
         left: 0px;
         padding: 20px;
         margin-top: 150px;
@@ -150,7 +153,7 @@ button {
         flex-wrap: wrap;
         position: absolute;
         left: 8%;
-        top: 500px;
+        top: 495px;
         margin-top: 320px;
         width: 90%;
     }
@@ -162,5 +165,13 @@ button {
     canvas {
         height: 4000px;
         width: 100%;
+    }
+   }
+   @media (max-width:385px) {
+    .card {
+        height: 705px;
+    }
+    .contenido{
+        top: 580px;
     }
    }
