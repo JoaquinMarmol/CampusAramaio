@@ -5,7 +5,7 @@ html {
   
   body {
     overflow: hidden;
-    background: #00ff0d url("https://i0.wp.com/laderasur.com/wp-content/uploads/2021/06/pexels-karolina-grabowska-5980859-1.jpg?ssl=1") no-repeat center center fixed;
+    background: #0fe942 url("https://i0.wp.com/laderasur.com/wp-content/uploads/2021/06/pexels-karolina-grabowska-5980859-1.jpg?ssl=1") no-repeat center center fixed;
     background-size: cover;
     position: fixed;
     padding: 0px;
@@ -56,7 +56,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #c8c8c8;
+    background: black;
     width: 56px;
     height: 56px;
     position: absolute;
@@ -83,7 +83,7 @@ html {
     display: inline-block;
     float: left;
     border-right: 2px dashed #EEEEEE;
-    background: #FFFFFF;
+    background: black;
     color: #000000;
     margin-top: 50px;
     opacity: 0;
@@ -122,6 +122,7 @@ html {
   }
   .cursoinfo{
     font-size: 20px;
+    color: white;
   }
   .profile-card .profile-bio {
     width: 175px;
@@ -129,7 +130,7 @@ html {
     display: inline-block;
     float: right;
     padding: 50px 20px 30px 20px;
-    background: #FFFFFF;
+    background: black;
     color: #333333;
     margin-top: 50px;
     text-align: center;
@@ -234,7 +235,7 @@ html {
   
   @-webkit-keyframes moveUp {
     0% {
-      background: #40ff00;
+      background: #167118;;
       top: 100%;
     }
     50% {
@@ -248,7 +249,7 @@ html {
   
   @keyframes moveUp {
     0% {
-      background: #00ff04;
+      background: #167118;;
       top: 100%;
     }
     50% {
@@ -416,13 +417,13 @@ html {
       100% {
         width: 50%;
         height: 500px;
-        background: #FFFFFF;
+        background: black;
         -webkit-border-radius: 15px;
       }
     }
     @keyframes materia {
       0% {
-        background: #E0E0E0;
+        background: black;
       }
       50% {
         border-radius: 15px;
@@ -430,7 +431,7 @@ html {
       100% {
         width: 50%;
         height: 500px;
-        background: #FFFFFF;
+        background: black;
         border-radius: 15px;
       }
     }
@@ -449,8 +450,9 @@ html {
     font-weight: 700;
     border-radius: 500px;
     overflow: hidden;
-    background:#167118;
-    color: ghostwhite;
+    background:#0fe942;
+    color: white;
+    border: 1px solid white;
    }
    
    .boton span {
@@ -497,11 +499,21 @@ html {
         border-radius: 15px;
       }
       100% {
-        width: 100%;
-        height: 750px;
-        background: #FFFFFF;
+        width: 95%;
+        height: 85%;
+        background: #000000;
         border-radius: 15px;
-      }
+    }
     }
 
+}
+  @media (min-width:1000px) and (max-width:1570px) {
+    @keyframes materia {
+      100% {
+        width: 50%;
+        height: 650px;
+        background: #000000;
+        border-radius: 15px;
+      }
+  }
 }
