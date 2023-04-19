@@ -195,3 +195,36 @@ button {
         top: 4000px;
     }
    }
+   @media (min-width:1000px) and (max-width:1570px) {
+    canvas {
+        width: 100%;
+        height: 3400px;
+    }
+    .card{
+        position: absolute;
+        width: 65%;
+        height: 615px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .articulos {
+        display: flex;
+        width: 100%;
+    }
+    .invisible{
+    width: 500px;
+    }
+    .derecha{
+    width: 450px;
+    }
+    .izquierda{
+    width: 450px;
+    }
+    .contenido {
+    top: 520px;
+    margin-top: 400px;
+    }
+  }
