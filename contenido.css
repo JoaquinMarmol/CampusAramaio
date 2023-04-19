@@ -59,7 +59,7 @@ img{
     border: 1px solid black;
 }
 canvas{
-    height: 3500px;
+    height: 3400px;
 }
 h1{
     color: #0fe942; 
@@ -128,6 +128,16 @@ button {
    .articulos{
     display: flex;
    }
+   footer{
+    position: absolute;
+    padding: 0.8em 0;
+    background-color: #1e1e1e;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 12px;
+    top: 3400px;
+    width: 100%;
+   }
    @media (max-width:1000px) {
     .card {
         display: flex;
@@ -163,8 +173,11 @@ button {
         width: 100%;
     }
     canvas {
-        height: 4000px;
+        height: 3800px;
         width: 100%;
+    }
+    footer{
+        top: 3800px;
     }
    }
    @media (max-width:385px) {
@@ -173,5 +186,11 @@ button {
     }
     .contenido{
         top: 580px;
+    }
+    canvas {
+        height: 4000px;
+    }
+    footer{
+        top: 4000px;
     }
    }
