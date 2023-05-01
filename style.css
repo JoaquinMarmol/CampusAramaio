@@ -24,7 +24,6 @@ html {
     position: absolute;
     left: 50%;
     top: 100%;
-    z-index: 2;
     display: block;
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -402,7 +401,7 @@ html {
     .profile-card .profile-bio {
       width: auto;
       height: auto;
-      padding: 15px 20px 30px 20px;
+      padding: 10px 10px 10px 10px;
       display: block;
       float: none;
     }
@@ -490,9 +489,108 @@ html {
    .boton{
     text-decoration: none;
    }
-   @media (max-width:1000px) {
+   @media (min-width:200px) and (max-width:365px) {
     body{
-      height: 1100px;
+      height: 100%;
+    }
+    .profile-bio{
+      height: 250px;
+      padding: 0px 10px 10px 10px;
+    }
+    .cursoinfo{
+      font-size: 18px;
+    }
+    .profile-card{
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 0;
+      transform: none;
+      background-color: black;
+      z-index: 0;
+    }
+    @keyframes moveUp {
+      100% {
+        top: 1%;
+        background: #E0E0E0;
+      }
+    }
+    @keyframes materia {
+      100% {
+        width: 95%;
+        height: 580px;
+        background: #000000;
+        border-radius: 15px;
+    }
+    }
+   }
+   @media (min-width:365px) and (max-width:400px) {
+    .profile-bio{
+      padding: 10px 12px 10px 12px;
+    }
+    .cursoinfo{
+      font-size: 18px;
+    }
+    .profile-card{
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 0;
+      transform: none;
+      background-color: black;
+      z-index: 0;
+    }
+    @keyframes moveUp {
+      100% {
+        top: 1%;
+        background: #E0E0E0;
+      }
+    }
+    @keyframes materia {
+      100% {
+        width: 95%;
+        height: 610px;
+        background: #000000;
+        border-radius: 15px;
+    }
+    }
+   }
+   @media (min-width:400px) and (max-width:1000px) {
+    body{
+      height: 100%;
+    }
+    a{
+      z-index: 5;
+    }
+    .profile-card{
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 0;
+      transform: none;
+      background-color: black;
+    }
+    @keyframes moveUp {
+      0% {
+        background: #167118;;
+        top: 100%;
+      }
+      50% {
+        top: 40%;
+      }
+      100% {
+        top: 6%;
+        background: #E0E0E0;
+      }
     }
     @keyframes materia {
       0% {
@@ -503,7 +601,7 @@ html {
       }
       100% {
         width: 95%;
-        height: 750px;
+        height: 630px;
         background: #000000;
         border-radius: 15px;
     }
@@ -513,8 +611,8 @@ html {
   @media (min-width:1000px) and (max-width:1570px) {
     @keyframes materia {
       100% {
-        width: 50%;
-        height: 650px;
+        width: 60%;
+        height: 500px;
         background: #000000;
         border-radius: 15px;
       }
