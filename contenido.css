@@ -33,11 +33,21 @@ img{
 }
 .contenido{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     position: absolute;
-    top: 500px;
-    left: 19%;
-    margin-top: 400px;
+    top: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.articulos{
+    display: flex;
+    margin: 0 auto;
+   }
+.articulosizq{
+    display: flex;
+    margin: 0 auto;
 }
 .izquierda{
     color: white;
@@ -59,7 +69,8 @@ img{
     border: 1px solid black;
 }
 canvas{
-    height: 3500px;
+    height: 3400px;
+    width: 100%;
 }
 h1{
     color: #0fe942; 
@@ -122,39 +133,53 @@ button {
    button:hover::before {
     transform: translate3d(100%, 0, 0);
    }
-   .invisible{
+   .invisible {
     width: 600px;
-   }
-   .articulos{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+   footer{
+    position: absolute;
+    padding: 0.8em 0;
+    background-color: #131313;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 12px;
+    top: 3400px;
+    width: 100%;
+   }
+   video{
+    width: 95%;
+    height: 350px;
+    border-radius: 10px;
    }
    @media (max-width:1000px) {
     .card {
-        display: flex;
-        flex-direction: column;
         position: absolute;
-        width: 90%;
+        width: 85%;
         height: 615px;
-        left: 0px;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
         padding: 20px;
         margin-top: 150px;
         border-radius: 20px;
     }
     .izquierda {
-        width: 90%;
+        width: 95%;
     }
     .derecha {
-        width: 90%;
+        width: 95%;
         margin: 20px 0px;
     }
     .contenido {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         position: absolute;
-        left: 8%;
-        top: 495px;
-        margin-top: 320px;
         width: 90%;
     }
     .articulos {
@@ -162,9 +187,45 @@ button {
         flex-direction: column;
         width: 100%;
     }
+    .articulosizq{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     canvas {
-        height: 4000px;
+        height: 4300px;
         width: 100%;
+    }
+    footer{
+        top: 4300px;
+    }
+    .invisible{
+        width: 100%;
+    }
+    .contenido{
+        top: 930px;
+    }
+    iframe{
+        width: 100%;
+        padding: 10px;
+    }
+    .boton{
+        z-index: 5;
+    }
+
+   }
+   @media (min-width:385px) and (max-width:565px){
+    canvas {
+        height: 4450px;
+        width: 100%;
+    }
+    footer{
+        top: 4450px;
+    }
+    .card {
+        height: 700px;
+    }
+    .contenido{
+        top: 120%;
     }
    }
    @media (max-width:385px) {
@@ -172,6 +233,65 @@ button {
         height: 705px;
     }
     .contenido{
-        top: 580px;
+        top: 930px;
+    }
+    canvas {
+        height: 4300px;
+    }
+    footer{
+        top: 4300px;
+    }
+    .articulosizq{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    iframe{
+        width: 100%;
+        padding: 10px;
+    }
+    .boton{
+        z-index: 5;
+    }
+    .a{
+        z-index: 5;
     }
    }
+   @media (min-width:1000px) and (max-width:1570px) {
+    canvas {
+        width: 100%;
+        height: 3400px;
+    }
+    .card{
+        position: absolute;
+        width: 700px;
+        height: 470px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 15%;
+        bottom: 0;
+    }
+    .articulos{
+        display: flex;
+        margin: 0 auto;
+       }
+    .invisible{
+    width: 500px;
+    }
+    .derecha{
+    width: 450px;
+    }
+    .izquierda{
+    width: 450px;
+    }
+    .contenido{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 110%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+  }
