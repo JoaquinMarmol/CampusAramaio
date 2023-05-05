@@ -42,6 +42,7 @@ img{
     margin: auto;
 }
 .articulos{
+    padding: 20px 10px;
     display: flex;
     margin: 0 auto;
    }
@@ -69,7 +70,7 @@ img{
     border: 1px solid black;
 }
 canvas{
-    height: 3400px;
+    height: 3700px;
     width: 100%;
 }
 h1{
@@ -148,7 +149,7 @@ button {
     text-align: center;
     color: rgba(255,255,255,0.7);
     font-size: 12px;
-    top: 3400px;
+    top: 3700px;
     width: 100%;
    }
    video{
@@ -225,7 +226,7 @@ button {
         height: 700px;
     }
     .contenido{
-        top: 120%;
+        top: 930px;
     }
    }
    @media (max-width:385px) {
@@ -257,9 +258,12 @@ button {
     }
    }
    @media (min-width:1000px) and (max-width:1570px) {
+    footer{
+        top: 3700px;
+    }
     canvas {
         width: 100%;
-        height: 3400px;
+        height: 3700px;
     }
     .card{
         position: absolute;
