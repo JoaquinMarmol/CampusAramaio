@@ -35,20 +35,19 @@ img{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    top: 80%;
+    top: 800px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
 }
 .articulos{
-    padding: 20px 10px;
     display: flex;
     margin: 0 auto;
    }
 .articulosizq{
     display: flex;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 .izquierda{
     color: white;
@@ -139,7 +138,8 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    margin-top: 5px;
 }
 
    footer{
@@ -157,7 +157,7 @@ button {
     height: 350px;
     border-radius: 10px;
    }
-   @media (max-width:1000px) {
+   @media (min-width:580px) and (max-width:1000px) {
     .card {
         position: absolute;
         width: 85%;
@@ -171,17 +171,20 @@ button {
         border-radius: 20px;
     }
     .izquierda {
-        width: 95%;
+        width: 70%;
+        margin: auto;
     }
     .derecha {
-        width: 95%;
-        margin: 20px 0px;
+        width: 70%;
+        margin: auto;
+    }
+    iframe{
+        width: 70% !important;
     }
     .contenido {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
-        width: 90%;
     }
     .articulos {
         display: flex;
@@ -191,13 +194,14 @@ button {
     .articulosizq{
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
     }
     canvas {
-        height: 4300px;
+        height: 4500px;
         width: 100%;
     }
     footer{
-        top: 4300px;
+        top: 4500px;
     }
     .invisible{
         width: 100%;
@@ -212,39 +216,154 @@ button {
     .boton{
         z-index: 5;
     }
-
    }
-   @media (min-width:385px) and (max-width:565px){
+   @media (min-width:400px) and (max-width:580px){
+    .card {
+        position: absolute;
+        width: 85%;
+        height: 675px;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        padding: 20px;
+        margin-top: 150px;
+        border-radius: 20px;
+    }
+    .invisible{
+        width: 95%;
+        margin: 10px;
+    }
+    .izquierda {
+        width: 90%;
+        margin: auto;
+    }
+    .derecha {
+        width: 90%;
+        margin: auto;
+    }
     canvas {
-        height: 4450px;
+        height: 4750px;
         width: 100%;
     }
     footer{
-        top: 4450px;
+        top: 4750px;
     }
-    .card {
-        height: 700px;
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 90%;
+        top: 900px;
     }
-    .contenido{
-        top: 930px;
-    }
-   }
-   @media (max-width:385px) {
-    .card {
-        height: 705px;
-    }
-    .contenido{
-        top: 930px;
-    }
-    canvas {
-        height: 4300px;
-    }
-    footer{
-        top: 4300px;
+    .articulos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
     .articulosizq{
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
+    }
+   }
+   @media (min-width:385px) and (max-width:400px){
+    .invisible{
+        width: 95%;
+        margin: 10px;
+    }
+    .izquierda {
+        width: 90%;
+        margin: auto;
+    }
+    .derecha {
+        width: 90%;
+        margin: auto;
+    }
+    .card {
+        position: absolute;
+        width: 85%;
+        height: 675px;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        padding: 20px;
+        margin-top: 150px;
+        border-radius: 20px;
+    }
+    canvas {
+        height: 4750px;
+        width: 100%;
+    }
+    footer{
+        top: 4750px;
+    }
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 90%;
+        top: 915px;
+    }
+    .articulos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .articulosizq{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+   }
+   @media (max-width:385px) {
+    .invisible{
+        width: 95%;
+        margin: 10px;
+    }
+    .izquierda {
+        width: 90%;
+        margin: auto;
+    }
+    .derecha {
+        width: 90%;
+        margin: auto;
+    }
+    .card {
+        position: absolute;
+        width: 85%;
+        height: 705px;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        padding: 20px;
+        margin-top: 150px;
+        border-radius: 20px;
+    }
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 90%;
+        top: 930px;
+    }
+    canvas {
+        height: 4900px;
+    }
+    footer{
+        top: 4900px;
+    }
+    .articulos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .articulosizq{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
     }
     iframe{
         width: 100%;
@@ -253,17 +372,14 @@ button {
     .boton{
         z-index: 5;
     }
-    .a{
-        z-index: 5;
-    }
    }
    @media (min-width:1000px) and (max-width:1570px) {
-    footer{
-        top: 3700px;
-    }
     canvas {
         width: 100%;
         height: 3700px;
+    }
+    footer{
+        top:3700px;
     }
     .card{
         position: absolute;
@@ -272,13 +388,15 @@ button {
         margin: auto;
         left: 0;
         right: 0;
-        top: 15%;
-        bottom: 0;
+        top: 150px;
     }
     .articulos{
         display: flex;
         margin: 0 auto;
        }
+    .articulosizq{
+        margin:15px auto;
+    }
     .invisible{
     width: 500px;
     }
@@ -292,7 +410,7 @@ button {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
-        top: 110%;
+        top: 750px;
         left: 0;
         right: 0;
         bottom: 0;
