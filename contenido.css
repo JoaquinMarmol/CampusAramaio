@@ -21,12 +21,14 @@ img{
     background-color: black;
     color: white;
     position: absolute;
+    padding: 20px;
+    border-radius: 20px;
     width: 700px;
     height: 470px;
-    left: 30%;
-    padding: 20px;
-    margin-top: 200px;
-    border-radius: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 150px;
 }
 .principal{
     padding: 10px;
@@ -35,7 +37,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    top: 80%;
+    top: 800px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -47,7 +49,7 @@ img{
    }
 .articulosizq{
     display: flex;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 .izquierda{
     color: white;
@@ -69,7 +71,7 @@ img{
     border: 1px solid black;
 }
 canvas{
-    height: 3400px;
+    height: 3700px;
     width: 100%;
 }
 h1{
@@ -138,7 +140,8 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    margin-top: 5px;
 }
 
    footer{
@@ -148,7 +151,7 @@ button {
     text-align: center;
     color: rgba(255,255,255,0.7);
     font-size: 12px;
-    top: 3400px;
+    top: 3700px;
     width: 100%;
    }
    video{
@@ -156,7 +159,7 @@ button {
     height: 350px;
     border-radius: 10px;
    }
-   @media (max-width:1000px) {
+   @media (min-width:580px) and (max-width:1000px) {
     .card {
         position: absolute;
         width: 85%;
@@ -170,17 +173,20 @@ button {
         border-radius: 20px;
     }
     .izquierda {
-        width: 95%;
+        width: 70%;
+        margin: auto;
     }
     .derecha {
-        width: 95%;
-        margin: 20px 0px;
+        width: 70%;
+        margin: auto;
+    }
+    iframe{
+        width: 70% !important;
     }
     .contenido {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
-        width: 90%;
     }
     .articulos {
         display: flex;
@@ -190,13 +196,14 @@ button {
     .articulosizq{
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
     }
     canvas {
-        height: 4300px;
+        height: 4800px;
         width: 100%;
     }
     footer{
-        top: 4300px;
+        top: 4800px;
     }
     .invisible{
         width: 100%;
@@ -211,39 +218,154 @@ button {
     .boton{
         z-index: 5;
     }
-
    }
-   @media (min-width:385px) and (max-width:565px){
+   @media (min-width:400px) and (max-width:580px){
+    .card {
+        position: absolute;
+        width: 85%;
+        height: 675px;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        padding: 20px;
+        margin-top: 150px;
+        border-radius: 20px;
+    }
+    .invisible{
+        width: 95%;
+        margin: 10px;
+    }
+    .izquierda {
+        width: 90%;
+        margin: auto;
+    }
+    .derecha {
+        width: 90%;
+        margin: auto;
+    }
     canvas {
-        height: 4450px;
+        height: 5350px;
         width: 100%;
     }
     footer{
-        top: 4450px;
+        top: 5350px;
     }
-    .card {
-        height: 700px;
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 90%;
+        top: 900px;
     }
-    .contenido{
-        top: 120%;
-    }
-   }
-   @media (max-width:385px) {
-    .card {
-        height: 705px;
-    }
-    .contenido{
-        top: 930px;
-    }
-    canvas {
-        height: 4300px;
-    }
-    footer{
-        top: 4300px;
+    .articulos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
     .articulosizq{
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
+    }
+   }
+   @media (min-width:385px) and (max-width:400px){
+    .invisible{
+        width: 95%;
+        margin: 10px;
+    }
+    .izquierda {
+        width: 90%;
+        margin: auto;
+    }
+    .derecha {
+        width: 90%;
+        margin: auto;
+    }
+    .card {
+        position: absolute;
+        width: 85%;
+        height: 675px;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        padding: 20px;
+        margin-top: 150px;
+        border-radius: 20px;
+    }
+    canvas {
+        height: 5350px;
+        width: 100%;
+    }
+    footer{
+        top: 5350px;
+    }
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 90%;
+        top: 915px;
+    }
+    .articulos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .articulosizq{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+   }
+   @media (max-width:385px) {
+    .invisible{
+        width: 95%;
+        margin: 10px;
+    }
+    .izquierda {
+        width: 90%;
+        margin: auto;
+    }
+    .derecha {
+        width: 90%;
+        margin: auto;
+    }
+    .card {
+        position: absolute;
+        width: 85%;
+        height: 705px;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        padding: 20px;
+        margin-top: 150px;
+        border-radius: 20px;
+    }
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 90%;
+        top: 930px;
+    }
+    canvas {
+        height: 5400px;
+    }
+    footer{
+        top: 5400px;
+    }
+    .articulos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .articulosizq{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
     }
     iframe{
         width: 100%;
@@ -252,14 +374,14 @@ button {
     .boton{
         z-index: 5;
     }
-    .a{
-        z-index: 5;
-    }
    }
    @media (min-width:1000px) and (max-width:1570px) {
     canvas {
         width: 100%;
-        height: 3400px;
+        height: 3900px;
+    }
+    footer{
+        top:3900px;
     }
     .card{
         position: absolute;
@@ -268,13 +390,15 @@ button {
         margin: auto;
         left: 0;
         right: 0;
-        top: 15%;
-        bottom: 0;
+        top: 150px;
     }
     .articulos{
         display: flex;
         margin: 0 auto;
        }
+    .articulosizq{
+        margin:15px auto;
+    }
     .invisible{
     width: 500px;
     }
@@ -288,7 +412,7 @@ button {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
-        top: 110%;
+        top: 750px;
         left: 0;
         right: 0;
         bottom: 0;

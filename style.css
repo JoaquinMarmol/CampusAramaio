@@ -389,7 +389,7 @@ html {
     }
   }
   
-  @media screen and (min-height: 480px) {
+  @media screen and (min-height: 450px) {
     .profile-card header {
       width: auto;
       height: auto;
@@ -435,6 +435,7 @@ html {
       }
     }
   }
+  
   .boton {
     outline: none;
     cursor: pointer;
@@ -495,10 +496,10 @@ html {
     }
     .profile-bio{
       height: 250px;
-      padding: 0px 10px 10px 10px;
+      padding: 0px 3px;
     }
     .cursoinfo{
-      font-size: 18px;
+      font-size: 17px;
     }
     .profile-card{
       position: absolute;
@@ -511,6 +512,9 @@ html {
       transform: none;
       background-color: black;
       z-index: 0;
+    }
+    .boton{
+      margin-top: -20px;
     }
     @keyframes moveUp {
       100% {
@@ -562,6 +566,7 @@ html {
     }
    }
    @media (min-width:400px) and (max-width:1000px) {
+    
     body{
       height: 100%;
     }
@@ -608,15 +613,44 @@ html {
     }
 
 }
-  @media (min-width:1000px) and (max-width:1570px) {
-    @keyframes materia {
-      100% {
-        width: 60%;
-        height: 500px;
-        background: #000000;
-        border-radius: 15px;
-      }
+
+@media (min-height: 480px) and (max-height: 590px) {
+  .profile-card header {
+    width: auto;
+    height: auto;
+    padding: 0px 5px 20px 5px;
+    display: block;
+    float: none;
+    border-right: none;
+}
+.cursoinfo{
+  font-size: 16px;
+}
+.boton{
+  padding: 7px 25px;
+  margin-top: -20px ;
+}
+}
+@media (min-height: 725px) and (max-height: 900px) {
+  @keyframes materia {
+    100% {
+      width: 95%;
+      height: 610px;
+      top: 12%;
+      background: #000000;
+      border-radius: 15px;
+    }
   }
+}
+@media (min-width:1000px) and (max-width:1570px) {
+  @keyframes materia {
+    100% {
+      width: 60%;
+      height: 500px;
+      background: #000000;
+      border-radius: 15px;
+    }
+}
 }
  footer{
   position: absolute;
