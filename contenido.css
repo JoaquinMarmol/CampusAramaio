@@ -82,7 +82,7 @@ img{
     border: 1px solid black;
 }
 canvas{
-    height: 4050px;
+    height: 4250px;
     width: 100%;
 }
 p{
@@ -171,7 +171,7 @@ button {
     text-align: center;
     color: rgba(255,255,255,0.7);
     font-size: 12px;
-    top: 4050px;
+    top: 4250px;
     width: 100%;
    }
    video{
@@ -229,11 +229,11 @@ button {
         border-radius: 20px;
     }
     canvas {
-        height: 6150px;
+        height: 6650px;
         width: 100%;
     }
     footer{
-        top: 6150px;
+        top: 6650px;
     }
     .invisible{
         width: 100%;
@@ -249,7 +249,7 @@ button {
         z-index: 5;
     }
    }
-   @media (min-width:420px) and (max-width:680px){
+   @media (min-width:450px) and (max-width:680px){
     .trading{
         height: 150px;
        }
@@ -279,11 +279,11 @@ button {
         margin: auto;
     }
     canvas {
-        height: 6350px;
+        height: 6700px;
         width: 100%;
     }
     footer{
-        top: 6350px;
+        top: 6700px;
     }
     .contenido {
         display: flex;
@@ -309,7 +309,7 @@ button {
         border-radius: 20px;
     }
    }
-   @media (min-width:385px) and (max-width:420px){
+   @media (min-width:385px) and (max-width:450px){
     .trading{
         height: 150px;
        }
@@ -339,10 +339,10 @@ button {
         border: 1px solid white;
     }
     canvas {
-        height: 6550px;
+        height: 6950px;
     }
     footer{
-        top: 6550px;
+        top: 6950px;
     }
     .contenido {
         display: flex;
@@ -405,10 +405,10 @@ button {
         top: 930px;
     }
     canvas {
-        height: 6750px;
+        height: 7150px;
     }
     footer{
-        top: 6750px;
+        top: 7150px;
     }
     .articulos {
         display: flex;
@@ -437,10 +437,10 @@ button {
    @media (min-width:1000px) and (max-width:1570px) {
     canvas {
         width: 100%;
-        height: 4200px;
+        height: 4350px;
     }
     footer{
-        top:4200px;
+        top:4350px;
     }
     .card{
         position: absolute;
