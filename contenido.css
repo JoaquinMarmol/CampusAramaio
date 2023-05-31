@@ -339,10 +339,10 @@ button {
         border: 1px solid white;
     }
     canvas {
-        height: 6950px;
+        height: 7050px;
     }
     footer{
-        top: 6950px;
+        top: 7050px;
     }
     .contenido {
         display: flex;
@@ -405,10 +405,10 @@ button {
         top: 930px;
     }
     canvas {
-        height: 7150px;
+        height: 7250px;
     }
     footer{
-        top: 7150px;
+        top: 7250px;
     }
     .articulos {
         display: flex;
