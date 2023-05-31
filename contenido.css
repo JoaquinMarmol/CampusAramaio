@@ -4,6 +4,9 @@
     background-size: 100%;
 }
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Russo+One&family=Syne+Mono&display=swap');
+
 img{
     height: 100px;
 }
@@ -24,11 +27,13 @@ img{
     padding: 20px;
     border-radius: 20px;
     width: 700px;
-    height: 470px;
+    height: 520px;
     margin: auto;
     left: 0;
     right: 0;
     top: 150px;
+    border: 1px solid white;
+    
 }
 .principal{
     padding: 10px;
@@ -46,10 +51,16 @@ img{
 .articulos{
     display: flex;
     margin: 0 auto;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 20px;
    }
 .articulosizq{
     display: flex;
     margin: 15px auto;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 .izquierda{
     color: white;
@@ -71,13 +82,21 @@ img{
     border: 1px solid black;
 }
 canvas{
-    height: 3700px;
+    height: 4050px;
     width: 100%;
 }
+p{
+    font-family: 'Syne Mono', monospace;
+}
+span{
+    font-family: 'Syne Mono', monospace;
+}
 h1{
+    font-family: 'Syne Mono', monospace;
     color: #0fe942; 
 }
 h3{
+    font-family: 'Syne Mono', monospace;
     color: #0fe942;
 }
 .clase5{
@@ -101,6 +120,7 @@ button {
     background: #0fe942;
     color: ghostwhite;
     border: 1px solid white;
+    margin-bottom: 20px;
    }
    
    button span {
@@ -151,13 +171,16 @@ button {
     text-align: center;
     color: rgba(255,255,255,0.7);
     font-size: 12px;
-    top: 3700px;
+    top: 4050px;
     width: 100%;
    }
    video{
     width: 95%;
     height: 350px;
     border-radius: 10px;
+   }
+   .trading{
+    height: 200px;
    }
    @media (min-width:580px) and (max-width:1000px) {
     .card {
@@ -171,6 +194,7 @@ button {
         padding: 20px;
         margin-top: 150px;
         border-radius: 20px;
+        border: 1px solid white;
     }
     .izquierda {
         width: 70%;
@@ -191,19 +215,25 @@ button {
     .articulos {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 85%;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
     }
     .articulosizq{
         display: flex;
         flex-direction: column-reverse;
-        width: 100%;
+        width: 85%;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
     }
     canvas {
-        height: 4800px;
+        height: 6150px;
         width: 100%;
     }
     footer{
-        top: 4800px;
+        top: 6150px;
     }
     .invisible{
         width: 100%;
@@ -219,7 +249,10 @@ button {
         z-index: 5;
     }
    }
-   @media (min-width:400px) and (max-width:580px){
+   @media (min-width:420px) and (max-width:680px){
+    .trading{
+        height: 150px;
+       }
     .card {
         position: absolute;
         width: 85%;
@@ -231,6 +264,7 @@ button {
         padding: 20px;
         margin-top: 150px;
         border-radius: 20px;
+        border: 1px solid white;
     }
     .invisible{
         width: 95%;
@@ -245,11 +279,11 @@ button {
         margin: auto;
     }
     canvas {
-        height: 5750px;
+        height: 6350px;
         width: 100%;
     }
     footer{
-        top: 5750px;
+        top: 6350px;
     }
     .contenido {
         display: flex;
@@ -262,14 +296,23 @@ button {
         display: flex;
         flex-direction: column;
         width: 100%;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
     }
-    .articulosizq{
+    .articulosizq {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
     }
    }
-   @media (min-width:385px) and (max-width:400px){
+   @media (min-width:385px) and (max-width:420px){
+    .trading{
+        height: 150px;
+       }
     .invisible{
         width: 95%;
         margin: 10px;
@@ -293,12 +336,13 @@ button {
         padding: 20px;
         margin-top: 150px;
         border-radius: 20px;
+        border: 1px solid white;
     }
     canvas {
-        height: 5750px;
+        height: 6550px;
     }
     footer{
-        top: 5750px;
+        top: 6550px;
     }
     .contenido {
         display: flex;
@@ -311,14 +355,23 @@ button {
         display: flex;
         flex-direction: column;
         width: 100%;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
     }
-    .articulosizq{
+    .articulosizq {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
     }
    }
    @media (max-width:385px) {
+    .trading{
+        height: 150px;
+       }
     .invisible{
         width: 95%;
         margin: 10px;
@@ -342,6 +395,7 @@ button {
         padding: 20px;
         margin-top: 150px;
         border-radius: 20px;
+        border: 1px solid white;
     }
     .contenido {
         display: flex;
@@ -351,20 +405,26 @@ button {
         top: 930px;
     }
     canvas {
-        height: 5800px;
+        height: 6750px;
     }
     footer{
-        top: 5800px;
+        top: 6750px;
     }
     .articulos {
         display: flex;
         flex-direction: column;
         width: 100%;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
     }
-    .articulosizq{
+    .articulosizq {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
     }
     iframe{
         width: 100%;
@@ -377,26 +437,33 @@ button {
    @media (min-width:1000px) and (max-width:1570px) {
     canvas {
         width: 100%;
-        height: 3900px;
+        height: 4200px;
     }
     footer{
-        top:3900px;
+        top:4200px;
     }
     .card{
         position: absolute;
         width: 700px;
-        height: 470px;
+        height: 520px;
         margin: auto;
         left: 0;
         right: 0;
         top: 150px;
+        border: 1px solid white;
     }
     .articulos{
         display: flex;
         margin: 0 auto;
-       }
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
     .articulosizq{
         margin:15px auto;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 20px;
     }
     .invisible{
     width: 500px;
