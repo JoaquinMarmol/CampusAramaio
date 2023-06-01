@@ -1,4 +1,5 @@
 #Introducción a las Criptomonedas - Plataforma Virtual de Curso
+
 Este proyecto es una plataforma virtual desarrollada con HTML y CSS que ofrece un curso introductorio al mundo de las criptomonedas. El objetivo principal del curso es brindar a los estudiantes los conocimientos básicos necesarios para comprender y participar en el ecosistema de las criptomonedas.
 
 Características principales
@@ -28,6 +29,6 @@ Licencia
 Este proyecto se distribuye bajo la Licencia MIT. Para más información, consulta el archivo LICENSE.
 
 Contacto
-Si tienes alguna pregunta o sugerencia sobre este proyecto, no dudes en ponerte en contacto con nosotros. Puedes enviar un correo electrónico a contacto@aramaiocomputacion.com o visitar nuestro sitio web www.aramaiocomputacion.com.
+Si tienes alguna pregunta o sugerencia sobre este proyecto, no dudes en ponerte en contacto con nosotros. Puedes enviar un correo electrónico a alejandromarmolnecochea@gmail.com o visitar nuestro sitio web www.aramaiocomputacion.com.ar
 
 Esperamos que esta plataforma virtual de curso te sea útil y te ayude a comprender el fascinante mundo de las criptomonedas. ¡Disfruta aprendiendo!
