@@ -1,9 +1,11 @@
 <h1>Introducción a las Criptomonedas - Plataforma Virtual de Curso
 
+  
 Este proyecto es una plataforma virtual desarrollada con HTML y CSS que ofrece un curso introductorio al mundo de las criptomonedas. El objetivo principal del curso es brindar a los estudiantes los conocimientos básicos necesarios para comprender y participar en el ecosistema de las criptomonedas.
 
 <h2>Características principales 
 
+  
 -Interfaz intuitiva y fácil de usar.
   
 -Contenido estructurado en lecciones y módulos.
