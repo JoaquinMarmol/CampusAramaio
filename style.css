@@ -130,6 +130,7 @@ html {
   .cursoinfo{
     font-size: 20px;
     color: white;
+    padding: 0px 10%;
   }
   .profile-card .profile-bio {
     width: 175px;
@@ -498,7 +499,7 @@ html {
    .boton{
     text-decoration: none;
    }
-   @media (min-width:200px) and (max-width:365px) {
+   @media (min-width:200px) and (max-width:364px) {
     body{
       height: 100%;
     }
@@ -508,6 +509,7 @@ html {
     }
     .cursoinfo{
       font-size: 17px;
+      padding: 0px 0px;
     }
     .profile-card{
       position: absolute;
@@ -546,6 +548,7 @@ html {
     }
     .cursoinfo{
       font-size: 18px;
+      padding: 0px 0px;
     }
 
     @keyframes moveUp {
@@ -635,6 +638,10 @@ html {
     .boton{
       margin: 0px 0px 30px 0px;
     }
+    .cursoinfo{
+      font-size: 16px;
+      padding: 0px 0px;
+    }
 
 }
 
@@ -649,6 +656,7 @@ html {
 }
 .cursoinfo{
   font-size: 16px;
+  padding: 0px 0px;
 }
 .boton{
   padding: 7px 25px;
@@ -664,6 +672,16 @@ html {
       background: #000000;
       border-radius: 15px;
     }
+}
+  .cursoinfo{
+    font-size: 16px;
+    padding: 0px 0px;
+  }
+}
+@media (min-width:1180px) {
+.cursoinfo{
+  font-size: 16px;
+  padding: 0px 10%;
 }
 }
  footer{
